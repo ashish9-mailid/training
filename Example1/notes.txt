@@ -1,0 +1,61 @@
+@Configuration
+@EnableWebMvc
+public class MvcConfiguration extends WebMvcConfigurerAdapter{
+    @Bean
+    public ViewResolver getViewResolver() {
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/WEB-INF/");
+        resolver.setSuffix(".html");
+        return resolver;
+    }
+}
+
+	
+	  private static final String[] CLASSPATH_RESOURCE_LOCATIONS = {
+	  "classpath:/META-INF/resources/", "classpath:/resources/",
+	  "classpath:/static/", "classpath:/public/" };
+
+WebServices 
+	1. SOAP based -- Simple Object Access Protocol
+			 exchange data in xml format.
+			service lookup is also in xml format (.wsdl)
+
+
+	2.  REST API
+		Data exchange in json,xml,html
+		light weighted.
+		has to be secured
+
+	  1. Tomcat.
+	  2. Jersey -- pluging 
+	  3. Jackson
+
+	Postman - chrome plugin
+	SOAP UI
+	Curl 
+
+assignment
+
+1.	Create a List<Book> of Book Objects
+
+	CRUD -postman
+	Create retrieve update and delete.
+
+	class BookStore -- List
+
+	BookServiceI
+
+	public interface BookServiceI
+	{
+	List<Book> getAllBooks();
+	boolean addBook(Book book);
+	boolean deleteBook(String isbn);
+	boolean updateStock(String isbn,long newStock);
+	Book getBook(String isbn);
+	}
+
+
+	
+
+
+		
