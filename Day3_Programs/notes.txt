@@ -1,0 +1,60 @@
+Notes: 01/04/2021
+
+1.	inner classes and nested classes 
+2.	Exception Handling 
+3.	Equals() and HashCode()
+4.      Generic class /interface
+5 .	Collection Introduction
+
+1. Regular (nonstatic ) nested class can be private,protected,default or public.
+2. Static members cannot be created inside.
+
+3. Static inner class can have any access specifier.
+4. Can have both static and nonstatic members
+5. Cannot access nonstatic members of the outer class
+
+1.Anonymous inner class can be defined inside a class or method.
+2. is a child class or implementation of an interface
+
+Wrapper classes :	
+				Object
+
+				Number (Abstract)    Character    Boolean
+
+			Byte Short Integer Long Float Double
+
+
+	1. implement MyComparator for 2 Book Objects.
+
+		Book has -- (isbn String , title String, price double, stock long)
+	that returns a +ve , -Ve or 0. after comparing the price.
+
+
+Exceptions : try catch throws finally throw
+
+	Collections:
+
+	ArrayList -- dynamic -- size is not fixed -- 
+
+	int a[]=new int[5]; // {0,0,0,0,0}
+	a[0]=4; a[1]=5;a[2]=6;
+	
+		[4,5,6,0,0]  // 8 in the 2nd index
+
+		a[2]=8; // before this 6 has to be shifted to right
+
+	Create an ArrayList of Book in a class BookStore.
+	add methods to add a book, remove a book based on isbn, search book based on isbn;
+
+	
+
+
+
+
+
+
+
+
+
+
+

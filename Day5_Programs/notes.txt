@@ -1,0 +1,70 @@
+
+	1. Multithreading in Java
+
+	2. IO in Java
+
+
+1. EvenThread extends Thread
+	public void run(){ //}
+
+
+2. OddThread implements Runnable	
+	public void run(){ }
+
+
+Thread class
+	start(), run() , setName() , getName(), setPriority() getPriority()
+	sleep() (static) -- blocking method -- InterruptedException
+	join()  ---- blocking method -- InterruptedException
+	isAlive() 
+	currentThread() --
+
+Object class - wait() notify() notifyAll()
+ 
+
+Java Methods are Not Thread Safe by default - threads or clients can access or call them concurrently.
+
+1. run() -- no threads or scheduler will be involved.
+2. java.lang.IllegalThreadStateException is caused when a thread is started repeatedly.
+
+
+
+public void withdraw()
+{
+	//print 1
+	//print 2
+
+	synchronized()
+	{
+
+	//logic
+	}
+
+
+}
+
+1. Create a java application where a thread generates a single digit random number and 
+stores it in an array. another thread calculates sum of these numbers and prints it.
+Test the above with a client program.
+(use anonymous classes). 
+Define methods genRandomNumber() and calculateSum() in a class NumberGenerator.
+
+2. Create a java application using threads to implement queue of messages.
+	create 2 threads a consumer and a producer thread where producer thread produces a message,
+	consumer consumes a message and notifies the producer thread to produce the next message and 
+vice versa (2 way thread communication)
+
+
+Java 8 features
+
+1.	Functional interfaces.
+2.      Interface can have default and static methods.
+3. 	Lambda expressions
+
+
+
+
+
+
+
+

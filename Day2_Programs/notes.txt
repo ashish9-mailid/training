@@ -1,0 +1,146 @@
+
+	1. Constructor chaining.
+	2.  Object class 
+
+
+private
+default
+protected
+public
+
+for a top level public or default.
+
+during compilation types should match.
+
+polymorphism - poly morphs -- many forms
+
+	1. compile time -- Ex. Overloading
+
+	name is same, signatures are different
+
+	2. runtime polymorphism - dynamic binding.
+
+		-- for extendibility and loosely coupled components.
+
+
+Overriding -- methods of the base class are redefined in the child class.
+
+	rules:
+	1.	overridden methods should have the same prototype
+
+		<return-type> <name> (<signature>
+
+	2.     Overridden methods cannot be restrictive.
+
+	3.
+
+
+1. Create an application 
+	
+	An online store gives offers to its employees and Privileged Customers .
+	All Customers get a 5% discount.
+	Employees get a discount of 20% straight on the amount for the purchased products.
+	Privileged customer have reward points and they get  100 points on  a purchase.
+
+	Create classes for the above scenario.
+	User(name,city)
+	Customer - (custid,email)
+	PriviligedCustomer - (rewardpoints)
+	Employee -- (empid,dept)
+
+	offers are given through a method giveOffers(double amount)
+
+	Create a class Utility that has a method printOffers(...) that prints the offer details.
+
+
+	1.	abstract class is a class that has 1 or more abstract methods.
+	2.	exists as a template
+	3       Cannot be instantiated.
+		Ex: User user=new User() ; //error
+	4	User user;  //ok
+		user=new Employee()
+
+	5.	Can have concrete methods.
+	6.      abstract methods cannot be final
+	7.      It is used for dynamic binding .
+
+
+	access specifiers.
+
+1.  Private methods are confined to the class only , are not inherited.
+2.  Protected methods are inherited and exposed to only child classes not to other classes.
+3   Protected methods cannot be called with objects, in other non child classes and in main method or static methods.
+4   default methods are visible only  in the same package
+	
+
+This class must implement the inherited abstract method User.giveOffers(double), 
+but cannot override it since it is not visible from Test. 
+Either make the type abstract or make the inherited method visible
+
+
+public class C extends A ,User //not valid
+{
+
+
+}
+
+//Bird chirps  Dog barks  MusicPlayer playsMusic 
+
+Vehicle moves
+
+interface -- 
+
+	1.  contract / specification
+		interface Dog{
+			public void barks();
+
+		}
+
+		interface Bird{
+			public void chirps();
+		}
+
+public class Person implements Dog,Bird   
+
+{
+
+
+
+}
+	interface Payment
+	{
+		public void makePayment(..);
+
+	}
+
+1. No concrete methods ( in Java 8 we can have default methods)
+2. NO static methods till Java 7 -- java 8 + can have
+3. No variables
+	double PI=3.14;  // final ,public and static by default
+4	Dynamic binding 
+5	Sharing the protype of the method
+6	interface can extends 1 or more interfaces
+	interface i3 extends i1,i2{ }
+
+C
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

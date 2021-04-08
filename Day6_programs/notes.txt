@@ -1,0 +1,83 @@
+
+IO 
+Java 8 Stream API
+JDBC - JPA
+
+
+Thread safe classes - final classes -- no setter methods
+
+	String , Math, Wrapper classes
+
+	String s1=new String("abcd");
+
+	s1 = s1.toUpperCase();
+
+	//print s1  ABCD
+
+Thread Safe collections -- Vector and HashTable
+
+ArrayList<String> al = new ArrayList<>(Arrays.asList("abc","xyz");
+
+	synchronized(al){
+	al.add("jj");
+	al.add("kj");
+	}
+
+	IO -- java.io
+
+	Character streams -- 2bytes - char  
+	FileWriter , FileReader
+
+	
+	Byte Streams -- 
+	FileOutpuStream , FileInputStream
+
+	1. Read / write from/to files
+	2  write/read objects
+
+.csv -- comma seperated values: 1234,C,120.50,100
+	
+	persisting the data in a socket or a file.(passivation)
+	
+	Serialization -- break the object to bits and pieces.
+
+	class Book implements Serializable // marker interface
+	{
+
+
+
+	}
+
+	Book b1=new Book(...);
+	oout.writeObject(b1); //NotSerializableException
+
+Transient variable dont participate in serialization
+
+1. Write a program to serialize and deserialize Book object.
+
+annotations
+	@Override @FunctionalInterface -- info
+	configurations 
+
+Java 8
+stream() -- get the stream of the elements
+filter(..) -- conditional
+collect(..) -- store the result in another resource
+map(..) -- reprocess the data.
+	
+create table Book(
+isbn varchar2(100) primary key,
+title text,
+price double,
+stock bigint);
+
+
+
+
+
+
+
+
+
+
+
