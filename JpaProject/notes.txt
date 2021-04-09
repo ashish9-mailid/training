@@ -1,0 +1,20 @@
+
+JSTL - Jsp Standard Template Libraries
+Struts -- tagged libraries
+JSF -- tagged libraries
+Thymeleaf 
+
+<%@ taglib uri="" prefix="mytag"%>
+
+
+	Example1 -- 8081
+	JpaProject -- 8082
+		Web , devtools, JPA , h2 , MySqlconnector, 	
+ 
+JPA 
+1.	application.properties
+	db properties -- for h2-db (optional)
+
+2.    Entities
+
+3.  public interface BookRepo extends JPARepository<Book,String>
