@@ -11,4 +11,5 @@ public interface BookServiceI
 	boolean deleteById(String isbn);
 	Book updateStock(String isbn,long newStock);
 	Book getBook(String isbn);
+	List<Book> getAllBooksPattern(String pattern);
 }

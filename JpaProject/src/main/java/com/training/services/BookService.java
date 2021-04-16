@@ -48,4 +48,12 @@ public class BookService implements BookServiceI {
 		return bookRepo.findById(isbn).get();
 	}
 
+	@Override
+	public List<Book> getAllBooksPattern(String pattern) {
+		
+		return bookRepo.findByTitleLike(pattern);
+	}
+	
+	
+
 }

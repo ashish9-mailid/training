@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Configuration;
 import com.training.bean.Book;
 import com.training.repo.BookRepo;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@EnableSwagger2
 @Configuration
 @SpringBootApplication
 public class JpaProjectApplication implements CommandLineRunner{
@@ -56,7 +59,9 @@ private String message;
 		
 	//	System.out.println(bookRepo.booksLessThanStock(200));
 		
-		System.out.println(bookRepo.updateStock(100, 60));
+	//	System.out.println(bookRepo.updateStock(100, 60));
+		
+		System.out.println(bookRepo.findByTitleLike("C%"));
 	
 	}
 	

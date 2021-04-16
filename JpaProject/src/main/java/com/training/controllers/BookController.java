@@ -55,6 +55,18 @@ public class BookController {
 		return bookService.getBook(isbn);
 	}
 	
+	@GetMapping("/getBooks/pattern/{pattern}")
+	public List<Book> getBooksPattern(@PathVariable("pattern") String pattern)
+	{
+		return bookService.getAllBooksPattern(pattern);
+	}
+	
+	@GetMapping("/sayHello")
+	public String sayHello()
+	{
+		return "Hello Docker";
+	}
+	
 }
 
 

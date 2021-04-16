@@ -18,3 +18,26 @@ JPA
 2.    Entities
 
 3.  public interface BookRepo extends JPARepository<Book,String>
+
+Assignment
+
+1.     find all books based on title. 
+		findBooksTitle("C")     // C
+2.    find all books based on title pattern.
+		findBooksPatternSearch("C")	 // C CPlus CSharp so on..
+
+3.	Find all books whose stock >  n where n is any number
+
+
+4.      Find All books based on title and price > :m
+
+5.       update all books whose stock is less than x by adding y more stock.
+
+
+Create a springboot application for managing customers in an online store.
+Customer registers with name,email,mobileno and an encrypted password is generated.
+Customer logins to the store to view books based on genre.
+Book has (isbn,title,price,stock ,genre) as fields.
+
+
+

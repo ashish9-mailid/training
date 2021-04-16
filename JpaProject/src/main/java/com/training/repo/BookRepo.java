@@ -38,8 +38,7 @@ public interface BookRepo extends JpaRepository<Book, String> {
 	@Query("update Book b set b.stock=:newstock where b.stock < :stock")
 	public int updateStock(@Param("newstock") long newstock,@Param("stock") long stock);
 	
-	
-	
+		
 	
 	
 }
