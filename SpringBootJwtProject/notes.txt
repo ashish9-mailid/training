@@ -1,0 +1,17 @@
+on postman run localhost:8080/authenticate
+on body raw json format enter the following
+
+{
+	"username":"user1",
+	"password":"password"
+}
+
+and send the request to see a token string 
+
+copy this token on clipboard.
+
+then hit endpoint /hello or /buy  on GET
+in header enter Authorization Key with Bearer <jw token generated>
+to see the output
+
+
